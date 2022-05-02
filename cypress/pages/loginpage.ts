@@ -1,4 +1,7 @@
 import { HomePage } from './homepage';
+import { Textfield } from '../../cypress-ui-core/elements/textfield';
+import { Button } from '../../cypress-ui-core/elements/button';
+
 /**
  * Panel: Include @loginpage context related component attributes and behaviours
  * componets - variables
@@ -23,7 +26,7 @@ export class LoginPage {
      * @todo Draft version
      */
     enterusername(user:string){
-        cy.get(this.txt_username).type(user);
+        new Textfield(this.txt_username).enterText(user);
         return this;
     }
 
@@ -33,7 +36,7 @@ export class LoginPage {
      * @todo Draft version
      */
     enterPassword(pass:string){
-        cy.get(this.txt_password).type(pass);
+        new Textfield(this.txt_password).enterText(pass);
         return this;
     }
 
@@ -43,7 +46,7 @@ export class LoginPage {
      * @todo Draft version
      */
     performLogin(){
-        cy.get(this.btn_login).click();
-        return new HomePage();
+        new Button(this.btn_login).click();
+        return new HomePage;
     }
 }
