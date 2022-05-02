@@ -1,19 +1,13 @@
 import { LoginPage } from '../../pages/loginpage';
-import { HomePage } from '../../pages/homepage';
 
 const loginPage = new LoginPage();
-const homePage = new HomePage();
 
-it('Orange HRM Login Test',() => {
+it('Orange HRM Login and Logout E2E Test',() => {
     cy.visit('https://opensource-demo.orangehrmlive.com/');
 
-    loginPage.enterusername('Admin');
-    loginPage.enterPassword('admin123');
-    loginPage.performLogin();
-
-    cy.wait(5000);
-
-    homePage.performWelcome();
-    homePage.performLogout();
-        
+    loginPage.enterusername('Admin').
+    enterPassword('admin123').
+    performLogin().
+    performWelcome().
+    performLogout();      
 });
