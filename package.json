@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/shiwantha-msc/cypressTSFramework#readme",
   "dependencies": {
+    "chalk": "^4.1.2",
     "cypress": "^9.5.4",
     "mochawesome-merge": "^4.2.1",
     "mochawesome-report-generator": "^6.2.0",
