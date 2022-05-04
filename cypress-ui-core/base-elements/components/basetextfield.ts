@@ -1,4 +1,4 @@
-import { Typable } from "../behaviours/Typable";
+import { Typable } from "../behaviours/typable";
 import { BaseElement } from "../generalize/baseelement";
 
 export class BaseTextField extends BaseElement{
