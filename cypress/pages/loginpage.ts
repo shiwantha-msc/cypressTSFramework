@@ -25,7 +25,7 @@ export class LoginPage {
      * Direct event call
      * @todo Draft version
      */
-    private enterusername(user:string){
+    public enterusername(user:string){
         new Textfield(this.txt_username).enterText(user);
         return this;
     }
@@ -35,7 +35,7 @@ export class LoginPage {
      * Direct event call
      * @todo Draft version
      */
-    private enterPassword(pass:string){
+    public enterPassword(pass:string){
         new Textfield(this.txt_password).enterText(pass);
         return this;
     }
@@ -45,7 +45,7 @@ export class LoginPage {
      * Direct event call
      * @todo Draft version
      */
-    private performLogin(){
+    public performLogin(){
         new Button(this.btn_login).click();
         return new HomePage;
     }

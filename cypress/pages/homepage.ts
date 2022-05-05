@@ -27,7 +27,7 @@ export class HomePage{
      * Indirect event call
      * @todo Draft version
      */
-    private performWelcome(){
+    public performWelcome(){
         this.headerPanel.performWelcome();
         return this;
     }
@@ -37,7 +37,7 @@ export class HomePage{
      * Indirect event call
      * @todo Draft version
      */
-    private performLogout(){
+    public performLogout(){
         this.headerPanel.performLogout();
     }
 }

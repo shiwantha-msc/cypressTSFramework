@@ -17,7 +17,7 @@ export class HeaderPanel{
      * Direct event call
      * @todo Draft version
      */
-    private performWelcome(){
+    public performWelcome(){
         new Button(this.lbl_welcome).click();
     }
 
@@ -26,7 +26,7 @@ export class HeaderPanel{
      * Direct event call
      * @todo Draft version
      */
-    private performLogout(){
+    public performLogout(){
         new Button(this.btn_logout).click();
     }
 }
