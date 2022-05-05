@@ -11,9 +11,9 @@ import { Button } from '../../cypress-ui-core/elements/button';
  */
 export class LoginPage {
 
-    txt_username = "#txtUsername";
-    txt_password = "#txtPassword";
-    btn_login = "#btnLogin";
+    private txt_username = "#txtUsername";
+    private txt_password = "#txtPassword";
+    private btn_login = "#btnLogin";
 
     /**
      * Page load event @loginpage context
@@ -25,7 +25,7 @@ export class LoginPage {
      * Direct event call
      * @todo Draft version
      */
-    enterusername(user:string){
+    private enterusername(user:string){
         new Textfield(this.txt_username).enterText(user);
         return this;
     }
@@ -35,7 +35,7 @@ export class LoginPage {
      * Direct event call
      * @todo Draft version
      */
-    enterPassword(pass:string){
+    private enterPassword(pass:string){
         new Textfield(this.txt_password).enterText(pass);
         return this;
     }
@@ -45,7 +45,7 @@ export class LoginPage {
      * Direct event call
      * @todo Draft version
      */
-    performLogin(){
+    private performLogin(){
         new Button(this.btn_login).click();
         return new HomePage;
     }

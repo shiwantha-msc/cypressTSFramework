@@ -9,15 +9,15 @@ import { Button } from "../../cypress-ui-core/elements/button";
  */
 export class HeaderPanel{
 
-    lbl_welcome = "#welcome";
-    btn_logout = "#welcome-menu > :nth-child(1) > :nth-child(3) > a";
+    private lbl_welcome = "#welcome";
+    private btn_logout = "#welcome-menu > :nth-child(1) > :nth-child(3) > a";
 
     /**
      * Panel : Perform profile welcome drop-down icon to list down action-list
      * Direct event call
      * @todo Draft version
      */
-    performWelcome(){
+    private performWelcome(){
         new Button(this.lbl_welcome).click();
     }
 
@@ -26,7 +26,7 @@ export class HeaderPanel{
      * Direct event call
      * @todo Draft version
      */
-    performLogout(){
+    private performLogout(){
         new Button(this.btn_logout).click();
     }
 }

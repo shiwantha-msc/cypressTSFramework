@@ -10,8 +10,8 @@ import { HeaderPanel } from '../panels/headerpanel';
  */
 export class HomePage{
     
-    lbl_welcome = "#welcome";
-    btn_logout = "#welcome-menu > :nth-child(1) > :nth-child(3) > a";
+    private lbl_welcome = "#welcome";
+    private btn_logout = "#welcome-menu > :nth-child(1) > :nth-child(3) > a";
 
     headerPanel:HeaderPanel;
 
@@ -27,7 +27,7 @@ export class HomePage{
      * Indirect event call
      * @todo Draft version
      */
-    performWelcome(){
+    private performWelcome(){
         this.headerPanel.performWelcome();
         return this;
     }
@@ -37,7 +37,7 @@ export class HomePage{
      * Indirect event call
      * @todo Draft version
      */
-    performLogout(){
+    private performLogout(){
         this.headerPanel.performLogout();
     }
 }
