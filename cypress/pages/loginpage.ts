@@ -1,6 +1,5 @@
 import { HomePage } from './homepage';
-import { Textfield } from '../../cypress-ui-core/elements/textfield';
-import { Button } from '../../cypress-ui-core/elements/button';
+import { Textfield, Button } from '../../cypress-ui-core/element_loader';
 
 /**
  * Panel: Include @loginpage context related component attributes and behaviours

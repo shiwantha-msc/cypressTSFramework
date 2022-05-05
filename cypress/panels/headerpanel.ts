@@ -1,4 +1,4 @@
-import { Button } from "../../cypress-ui-core/elements/button";
+import { Button } from '../../cypress-ui-core/element_loader';
 
 /**
  * Panel: Include @headerpanel context related component attributes and behaviours
